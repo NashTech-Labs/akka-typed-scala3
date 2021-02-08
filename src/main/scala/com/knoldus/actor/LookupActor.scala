@@ -12,7 +12,7 @@ object LookupActor {
   import LookupCommand._
 
   def apply(): Behavior[LookupCommand] = Behaviors.receive { (ctx, msg) =>
-    val listingResponseAdapter: ActorRef[Receptionist.Listing] = ctx.messageAdapter(new ListingResponse(_))
+    val listingResponseAdapter: ActorRef[Receptionist.Listing] = ctx.messageAdapter(ListingResponse(_))
     msg match {
       case LookUpForActors =>
         ctx.log.warn("Lookup started for PingActor..")
