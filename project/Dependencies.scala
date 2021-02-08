@@ -8,4 +8,7 @@ object Dependencies {
   val logback = "ch.qos.logback" % "logback-classic" % "1.2.3"
 
   val akkaTypedTest = "com.typesafe.akka" %% "akka-actor-testkit-typed" % AkkaVersion % Test
+  
+  val scalaTest =  "org.scalatest" %% "scalatest" % "3.2.4-M1" % Test
+
 }

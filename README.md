@@ -2,8 +2,8 @@
 
 ### Usage
 
-This is a simple sbt project built using Scala3. You can compile code with `sbt compile` and run it
-with `sbt run`, `sbt console` will start a Dotty REPL.
+This is a simple sbt project built using Scala3. You can compile code with `sbt compile` ,run it
+with `sbt run` and execute test cases with `sbt test`. The command `sbt console` will start a Dotty REPL.
 
 ### About the Project
 The project is based on akka-typed actors. There are mainly 3 actors in this project
